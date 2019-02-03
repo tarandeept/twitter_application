@@ -17,7 +17,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="TwitterLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tOe-2i-WoC">
+                                <rect key="frame" x="80" y="100" width="215" height="487"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15857076644897461" green="0.62460774183273315" blue="0.95690411329269409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="tOe-2i-WoC" secondAttribute="bottom" constant="80" id="D5L-YV-PCs"/>
+                            <constraint firstItem="tOe-2i-WoC" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="80" id="saG-8K-kx0"/>
+                            <constraint firstItem="tOe-2i-WoC" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="80" id="tqC-gs-55M"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="tOe-2i-WoC" secondAttribute="trailing" constant="80" id="whQ-gP-adB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
                 </viewController>
@@ -26,4 +37,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TwitterLogo" width="120" height="120"/>
+    </resources>
 </document>
